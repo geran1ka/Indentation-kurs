@@ -1,0 +1,13 @@
+.section-two__figure {
+  padding: 15px 0;
+  text-align: center;
+  line-height: 0;
+}
+
+.section-two__figure:first-child {
+  padding-bottom: 0;
+}
+
+.section-two__figure:last-child {
+  padding-bottom: 0;
+}

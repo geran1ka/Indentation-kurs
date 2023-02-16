@@ -1,0 +1,22 @@
+.section-one__left {
+  display: flow-root;
+  margin-bottom: 30px;
+}
+
+.section-one__right {
+  display: flow-root;
+}
+
+.section-one__img-left {
+  float: left;
+  margin-right: 30px;
+}
+
+.section-one__img-right {
+  float: right;
+  padding-left: 40px;
+}
+
+.section-one__img-right {
+  padding-left: 40px;
+}

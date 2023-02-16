@@ -8,7 +8,6 @@
 
 .section:last-of-type {
   padding-bottom: 0;
-
 }
 
 .subtitle {
@@ -27,6 +26,16 @@
   padding: 15px 0;
 }
 
+.text:first-of-type {
+  padding-top: 0;
+  border: 1px solid aqua;
+}
+
+.text:last-of-type {
+  padding-bottom: 0;
+  border: 1px solid red;
+}
+
 .text__bold {
   font-weight: 700;
 }
@@ -35,21 +44,11 @@
   font-style: italic;
 }
 
-.left {
-  display: flow-root;
-}
 
-.right {
-  display: flow-root;
-}
 
-.figure {
-  text-align: center;
-}
 
-.img {
-  padding: 15px 0;
-}
+
+
 
 .figure__caption {
   padding: 15px 30px;

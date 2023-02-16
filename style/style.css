@@ -1,0 +1,60 @@
+.section {
+  padding: 25px 0;
+}
+
+.section:first-child {
+  padding-top: 0;
+}
+
+.section:last-of-type {
+  padding-bottom: 0;
+
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.194;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 15px 0;
+}
+
+.text__bold {
+  font-weight: 700;
+}
+
+.text__italic {
+  font-style: italic;
+}
+
+.left {
+  display: flow-root;
+}
+
+.right {
+  display: flow-root;
+}
+
+.figure {
+  text-align: center;
+}
+
+.img {
+  padding: 15px 0;
+}
+
+.figure__caption {
+  padding: 15px 30px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}

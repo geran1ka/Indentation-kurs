@@ -1,0 +1,15 @@
+.first-section {
+  display: flow-root;
+  min-height: 840px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.img-right {
+  float: right;
+  padding-left: 40px;
+}

@@ -15,11 +15,11 @@
 </head>
 <body>
   
-  <article class="article">
+  <article class="header">
     <div class="container">
-      <h1 class="title">Отступы в вёрстке: margin и padding</h1>
-      <p class="text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
-      <p class="text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+      <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
+      <p class="header__text text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
+      <p class="header__text text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
     </div>
 
 
@@ -64,17 +64,23 @@
     <section class="section-two section" id="section-two">
       <div class="container">
         <h2 class="subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h2>
-
-        <p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-        <img class="section-two__img img" src="img/image-3.jpg" alt="Пример HTML-кода со списком">
-        <img class="section-two__img img" src="img/image-4.jpg" alt="??????????">
+        <figure class="section-two__figure">
+          <figcaption class="caption">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</figcaption>
+          <img class="section-two__img img" src="img/image-3.jpg" alt="Пример HTML-кода со списком">
+          <img class="section-two__img img" src="img/image-4.jpg" alt="??????????">
+        </figure>
         <p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
         <figure class="section-two__figure">
-          <img class="section-two__figure__img" src="img/image-5.jpg" alt="">
-          <figcaption class="section-two__figcaption"><p class="text"><span class="text__bold">ВАЖНО:</span> здесь <span class="text__italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
-          </figcaption>
+          <img class="section-two__img" src="img/image-5.jpg" alt="">
+          <figcaption class="section-two__caption"><span class="text__bold">ВАЖНО:</span> здесь <span class="text__italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
         </figure>
-        <p class="text">Казалось бы, можно задать отступ параграфу <span class="text__italic">&lt;p&gt;</span>, либо обёртке <span class="text__italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+        <p class="text">
+          Казалось бы, можно задать отступ параграфу 
+          <span class="text__italic">&lt;p&gt;</span>, 
+          либо обёртке 
+          <span class="text__italic">&lt;article&gt;</span> 
+          для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+        </p>
         <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
         <img class=" section-two__img img" src="img/image-6.jpg" alt="Пример HTML-кода c глубокой вложенностью">
         <p class="text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="text__italic">section</span>. Именно для него задается <span class="text__italic">padding-top</span>, а не <span class="text__italic">div</span> с классом <span class="text__italic">container</span>. Свойства <span class="text__italic">margin</span>, которые стоят по умолчанию необходимо обнулить.</p>
@@ -90,19 +96,25 @@
         <p class="text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
         <img class="img" src="img/image-8.jpg" alt="">
         <p class="text">В соответствии со вторым принципом: последний <span class="text__italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="text__italic">padding</span> для <span class="text__italic">section</span>. Я чаще всего задаю <span class="text__italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="text__italic">padding-top:50px </span> и <span class="text__italic">padding-bottom:50px.</span></p>
-        <img src="img/image-9.jpg" alt="" class="img">
-        <figure class="section-three__figure">
-          <img src="img/image-10.jpg" alt="" class="">
-          <img src="img/image-11.jpg" alt="" class="">
+        <figure class="figure">
+          <img src="img/image-9.jpg" alt="" class="img">
+          <img src="img/image-10.jpg" alt="" class="img">
+          <img src="img/image-11.jpg" alt="" class="img">
         </figure>
 
-          <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+        <figure class="figure">
+          <figcaption class="caption">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</figcaption>
           <img src="img/image-12.jpg" alt="" class="img">
           <img src="img/image-13.jpg" alt="" class="img">
-          <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+        </figure>
+        <figure class="figure">
+          <figcaption class="caption">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</figcaption>
           <img src="img/image-14.jpg" alt="" class="img">
-          <p class="text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+        </figure>
+        <figure class="figure">
+          <figcaption class="caption">Советую использовать псевдоклассы :last-child чаще других, например так:</figcaption>
           <img src="img/image-15.jpg" alt="CSS-код, пример применения псевдокласса last-child" class="img">
+        </figure>
       </div>
     </section>
 

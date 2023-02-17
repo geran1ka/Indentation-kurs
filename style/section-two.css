@@ -1,13 +1,20 @@
+.section-two__img {
+  padding: 15px 0;
+}
+
 .section-two__figure {
   padding: 15px 0;
-  text-align: center;
   line-height: 0;
 }
 
-.section-two__figure:first-child {
-  padding-bottom: 0;
+.section-two__figure__img {
+  border-top: 1px solid #5e5e5e;
 }
 
-.section-two__figure:last-child {
-  padding-bottom: 0;
+.section-two__figcaption {
+  padding: 15px 30px;
+  color: #5e5e5e;
+  border-left: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+  border-right: 1px solid #5e5e5e;
 }

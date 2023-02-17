@@ -1,3 +1,19 @@
+.img {
+  padding: 15px 0;
+}
+
+.section-three__figure {
+  padding: 15px 0;
+  line-height: 0;
+}
+
+.img:last-child {
+  padding-bottom: 0;
+  border: 1px solid aqua;
+}
+/*
+
+
 .figure {
   padding: 15px 0;
   text-align: center;
@@ -20,15 +36,9 @@
   line-height: 1.2;
   text-align: left;
 }
-
-.img {
-  padding: 15px 0;
-}
-
 .img:first-of-type {
   padding-top: 0;
 }
 
-.img:last-of-type {
-  padding-bottom: 0;
-}
+
+}*/

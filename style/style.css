@@ -1,9 +1,23 @@
+.article {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+
 .section {
   padding: 25px 0;
 }
 
-.section:first-child {
-  padding-top: 0;
+.section:first-of-type {
+  padding-top: 50px;
 }
 
 .section:last-of-type {

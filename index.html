@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-italic.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="index.css">
-  <title>INDENTANION</title>
+  <title>INDENTATION</title>
 </head>
 <body>
   <article class="article">
@@ -27,7 +27,7 @@
         <h2 class="title">Содержание:</h2>
 
         <nav class="navigation">
-          <ol class="list">
+          <ol class="navigation__list">
             <li class="item">
               <a href="#section-one" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a>
             </li>
@@ -79,7 +79,7 @@
 
         <figure class="figure">
           <img class="figure__img" src="img/image-5.jpg" alt="Пример отступа за счет соседних элементов">
-          <figcaption class="figure__figcaption"><p class="text"><span class="text__bold">ВАЖНО:</span> здесь <span class="text__italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p></figcaption>
+          <figcaption class="figure__figcaption-alternative"><p class="text"><span class="text__bold">ВАЖНО:</span> здесь <span class="text__italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p></figcaption>
         </figure>
 
         <p class="text">Казалось бы, можно задать отступ параграфу <span class="text__italic">&lt;p&gt;</span>, либо обёртке <span class="text__italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
@@ -113,18 +113,29 @@
           <img src="img/image-11.jpg" alt="HTML-код списка вредные рецепты">
         </figure>
 
-          <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-          
+        <figure class="figure">
+          <figcaption class="figure__figcaption">
+            <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+          </figcaption>
           <img class="img" src="img/image-12.jpg" alt="Изображения навигация сайта Methed" >
           <img class="img" src="img/image-13.jpg" alt="HTML-код навигации сайта Methed" >
+        </figure>
           
-          <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
           
-          <img class="img" src="img/image-14.jpg" alt="CSS-код отступа справа между пунктами меню">
+          <figure class="figure">
+            <figcaption class="figure__figcaption">
+              <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+            </figcaption>
+            <img class="img" src="img/image-14.jpg" alt="CSS-код отступа справа между пунктами меню">
+          </figure>
           
-          <p class="text text_alternative">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+          <figure class="figure">
+            <figcaption class="figure__figcaption">
+              <p class="text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+            </figcaption>
 
-          <img class="img" src="img/image-15.jpg" alt="CSS-код, пример применения псевдокласса last-child">
+            <img class="img" src="img/image-15.jpg" alt="CSS-код, пример применения псевдокласса last-child">
+            </figure>
       </div>
     </section>
 

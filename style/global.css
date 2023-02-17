@@ -1,7 +1,6 @@
 html {
   position: relative;
   box-sizing: border-box;
-
   background-color: #E5E5E5;
 }
 
@@ -77,14 +76,12 @@ iframe {
 */
 
 .container {
-  max-width: 1080px;
-  padding: 0 0px;
+  max-width: 1140px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
 .container-bg {
-  max-width: 1140px;
   padding: 25px 45px;
-  margin: 0 auto;
   background-color: #f1f1f1;
 }
